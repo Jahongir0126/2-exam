@@ -1,0 +1,87 @@
+.section4{
+    position: relative;
+    padding: 330px 165px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    &__h3{
+        margin: 0;
+        margin-bottom: 24px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        /* identical to box height, or 117% */
+        
+        letter-spacing: -0.369231px;
+        
+        color: #36536B;
+    }
+    &__p{
+        width: 445px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        /* or 187% */
+
+
+        color: #6C8294;
+        &::before{
+            content: url(../../img/sec4_phone1.png);
+            position: absolute;
+            top: 100px;
+            left: calc(50%);
+        }
+        &::after{
+            content: url(../../img/sec4_phone2.png);
+            position: absolute;
+            top: 100px;
+            left: calc(50% + 300px);
+        
+        }
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 75%;
+        width: 780px;
+        height: 780px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.15;
+        
+        background:#36536B;
+    }
+}
+@media screen and(max-width:426px) {
+    .section4{
+        padding: 80px 24px;
+        &::after{
+            display: none;
+        }
+        &__h3{
+            margin-top: 250px;
+            width: 327px;
+            font-size: 36px;
+            line-height: 36px;
+            text-align: center;
+        }
+        &__p{
+            width: 327px;
+            margin-left: 20px;
+            text-align: center;
+            &::before{
+                content: url(../../img/sec4_phonemobile.png);
+                top: 0;
+                left: 10%;
+            }
+            &::after{
+                display: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+.section5{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__card{
+        width: 350px;
+        text-align: center;
+        &__h4{
+            position: relative;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.138462px;
+            
+            color: #36536B;
+
+        }
+        .psevdo::before{
+            position: absolute;
+            content: url(../../img/summa.png);
+            bottom: calc(100% + 32px);
+            left: 37%;
+        }
+        .psevdo2::before{
+            position: absolute;
+            content: url(../../img/trade.png);
+            bottom: calc(100% + 32px);
+            left: 37%;
+        }
+        .psevdo3::before{
+            position: absolute;
+            content: url(../../img/card.png);
+            bottom: calc(100% + 32px);
+            left: 37%;
+        }
+        &__p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            
+            color: #6C8294;
+        }
+    }
+}
+
+
+@media screen and(max-width:426px) {
+    .section5{
+        margin: 40px;
+        flex-direction: column;
+        row-gap: 155px;
+        &__p{
+            margin: 0;
+        }
+    }
+    
+}

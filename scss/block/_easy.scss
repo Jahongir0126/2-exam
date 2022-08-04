@@ -1,0 +1,57 @@
+.section3{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__img{
+        margin-right: 125px;
+    }
+    &__h3{
+        margin: 0;
+        margin-bottom: 24px;
+        max-width: 445px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        /* identical to box height, or 117% */
+        
+        letter-spacing: -0.369231px;
+        
+        color: #36536B;
+    }
+    &__p{
+        max-width: 445px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        /* or 187% */
+        
+        
+        color: #6C8294;
+    }
+}
+
+@media screen and(max-width:426px) {
+    .section3{
+    flex-direction:column;
+    margin: 0;
+    &__img{
+        margin: 0;
+        margin-bottom: 48px;
+    }
+    &__h3{
+        font-size: 36px;
+        line-height: 36px;
+    }
+    &>div{
+        
+        text-align: center;
+    }
+
+    }
+
+
+}
